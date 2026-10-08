@@ -1,0 +1,83 @@
+/* ====[Start - Entire HTML Page]==== */
+* {
+    /* The * selector selects every HTML element */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*  width/height = content + padding + border */
+}
+/* ====[End - Entire HTML Page]==== */
+
+/* ====[Start - body]==== */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+    min-height: 100vh; /* Make the body at least as tall as the screen */
+    display: flex; /* Header   Main   Footer (By default, Flexbox arranges items horizontally) */
+    flex-direction: column; /* Vertical flex box */
+}
+
+/* ## Header (Top Nav Bar) ## */
+.site-header {
+    background-color: #000;
+    color: white;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* X-offset  Y-offset  Blur  Color */
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto; /* Top=0 Right=auto Bottom=0 Left=auto */
+    padding: 10px 20px; /* Top=10 Right=20 Bottom=10 Left=20 */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    flex-shrink: 0; /* Do not become smaller when the container doesn't have enough space */
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+    display: block;
+}
+
+/* Navigation links */
+.nav-links {
+    list-style: none; /*Removes the default bullet points or numbering*/
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none; /*Removes the browser's default text decoration, most commonly the underline from links*/
+    font-size: 16px;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+/* ## Main Content ## */
+main {
+    flex: 1; /* Fill available space (need to push the footer to the bottom) */
+}
+
+/* ## Footer ## */
+.site-footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 25px;
+	box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08); /* X-offset  Y-offset  Blur  Color */
+}
+/* ====[End - body]==== */
