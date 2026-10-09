@@ -1,0 +1,191 @@
+/* ==================================================
+   1. ELEMENT SELECTOR
+   ================================================== */
+
+/*
+   Selects every <p> element.
+*/
+
+p {
+    color: blue;
+}
+
+
+/* ==================================================
+   2. ID SELECTOR
+   ================================================== */
+
+/*
+   # selects an element by its id.
+
+   HTML:
+   <h1 id="main-title">
+*/
+
+#main-title {
+    color: red;
+}
+
+
+/* ==================================================
+   3. CLASS SELECTOR
+   ================================================== */
+
+/*
+   . selects elements by class.
+
+   HTML:
+   <h2 class="section-title">
+*/
+
+.section-title {
+    color: green;
+}
+
+
+/* ==================================================
+   4. CLASS SELECTOR
+   ================================================== */
+
+/*
+   Selects every element with
+   class="important".
+*/
+
+.important {
+    background-color: yellow;
+}
+
+
+/* ==================================================
+   5. DESCENDANT SELECTOR
+   ================================================== */
+
+/*
+   Selects every <h3> that is
+   somewhere inside .product.
+*/
+
+.product h3 {
+    color: purple;
+}
+
+
+/* ==================================================
+   6. CHILD SELECTOR
+   ================================================== */
+
+/*
+   > means DIRECT CHILD.
+
+   Selects <p> only when it is
+   a direct child of .product.
+*/
+
+.product>p {
+    color: orange;
+}
+
+
+/* ==================================================
+   7. DESCENDANT SELECTOR
+   ================================================== */
+
+/*
+   Selects buttons anywhere inside
+   .product.
+*/
+
+.product button {
+    background-color: black;
+
+    color: white;
+
+    padding: 10px 20px;
+
+    border: none;
+}
+
+
+/* ==================================================
+   8. ATTRIBUTE SELECTOR
+   ================================================== */
+
+/*
+   Selects only:
+   <input type="text">
+*/
+
+input[type="text"] {
+    background-color: lightblue;
+}
+
+
+/*
+   Selects only:
+   <input type="email">
+*/
+
+input[type="email"] {
+    background-color: lightgreen;
+}
+
+
+/*
+   Selects only:
+   <input type="password">
+*/
+
+input[type="password"] {
+    background-color: pink;
+}
+
+
+/* ==================================================
+   9. PSEUDO-CLASS
+   ================================================== */
+
+/*
+   :first-child selects an element
+   if it is the first child.
+*/
+
+.menu li:first-child {
+    color: red;
+}
+
+
+/*
+   :last-child selects an element
+   if it is the last child.
+*/
+
+.menu li:last-child {
+    color: green;
+}
+
+
+/*
+   :nth-child(2) selects the
+   second child.
+*/
+
+.menu li:nth-child(2) {
+    color: blue;
+}
+
+
+/* ==================================================
+   10. HOVER
+   ================================================== */
+
+/*
+   :hover applies when the mouse
+   is over the element.
+*/
+
+.product button:hover {
+    background-color: red;
+
+    cursor: pointer;
+}

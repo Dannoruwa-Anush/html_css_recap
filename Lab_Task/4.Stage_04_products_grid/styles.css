@@ -133,18 +133,10 @@ main {
     margin-bottom: 30px;
 }
 
-.products-table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 15px;
-    background-color: transparent;
-}
-
-.products-table td {
-    width: 33.33%;
-    padding: 0;
-    border: none;
-    vertical-align: top;
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
 }
 
 /* Product Card */

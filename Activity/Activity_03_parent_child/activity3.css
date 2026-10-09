@@ -1,0 +1,45 @@
+/* ==================================================
+   PARENT
+   ================================================== */
+
+.parent {
+    color: blue;
+
+    font-family: Arial, sans-serif;
+
+    text-align: center;
+
+    background-color: lightgray;
+
+    padding: 30px;
+}
+
+
+/* ==================================================
+   CHILD
+   ================================================== */
+
+.parent h1 {
+    color: red;
+}
+
+.parent p {
+    color: green;
+}
+
+
+/* ==================================================
+   NESTED CHILD
+   ================================================== */
+
+.child-box {
+    background-color: white;
+
+    padding: 20px;
+
+    margin-top: 20px;
+}
+
+.child-box h2 {
+    color: purple;
+}

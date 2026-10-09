@@ -133,18 +133,10 @@ main {
     margin-bottom: 30px;
 }
 
-.products-table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 15px;
-    background-color: transparent;
-}
-
-.products-table td {
-    width: 33.33%;
-    padding: 0;
-    border: none;
-    vertical-align: top;
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
 }
 
 /* Product Card */
@@ -234,6 +226,24 @@ main {
 
 
 /* ====[Responsive Design]==== */
+@media (max-width: 900px) {
+
+    .products-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px;
+    }
+
+    .products-section {
+        padding: 45px 20px;
+    }
+
+    .product-card {
+        min-height: 430px;
+    }
+
+}
+
+/* ## Mobile Responsive ## */
 @media (max-width: 768px) {
     .navbar {
         padding: 10px 15px;
@@ -288,22 +298,10 @@ main {
         line-height: 1.5;
     }
 
-    .products-table {
-        width: 100%;
-        border-spacing: 0;
-    }
-
-    /* Change from 3 columns to 1 column on mobile */
-    .products-table,
-    .products-table tbody,
-    .products-table tr,
-    .products-table td {
-        display: block;
-        width: 100%;
-    }
-
-    .products-table td {
-        margin-bottom: 20px;
+    /* Change from 3 columns to 2 column on mobile */
+    .products-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
     }
 
     .product-card {
@@ -328,6 +326,14 @@ main {
 
     .product-info p {
         font-size: 14px;
+    }
+
+    .price {
+        font-size: 18px;
+    }
+
+    .buy-button {
+        padding: 9px 15px;
     }
 
     .site-footer {
@@ -374,6 +380,11 @@ main {
 
     .products-section h2 {
         font-size: 27px;
+    }
+
+    .products-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
     }
 
     .product-card {
